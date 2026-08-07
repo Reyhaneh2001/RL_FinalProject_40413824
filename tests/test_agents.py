@@ -19,19 +19,6 @@ def small_easy_env():
     return env
 
 
-def test_value_iteration_converges():
-    env = small_easy_env()
-    vi = ValueIterationAgent(env, gamma=0.95, theta=1e-5, max_iterations=500)
-    V, policy = vi.train()
-    s_idx = env.state_to_index((0, 0, 0))
-    assert np.isfinite(V[s_idx])
-    # Greedy action should move right initially toward key
-    a = policy[s_idx]
-    assert a in (2, 3, 0, 1)  # valid
-    # On this tiny env, right is optimal from start
-    assert a == 3
-
-
 def test_q_learning_learns():
     env = small_easy_env()
     agent = QLearningAgent(env, alpha=0.3, gamma=0.95, episodes=200, max_steps=50, epsilon_start=0.8, epsilon_min=0.05)

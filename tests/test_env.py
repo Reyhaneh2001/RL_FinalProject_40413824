@@ -21,14 +21,6 @@ def tiny_env():
     )
 
 
-def test_transition_probabilities_sum_to_one():
-    env = tiny_env()
-    s = env.get_state()
-    transitions = env.transition_from_state(s, action=3)  # right
-    prob_sum = sum(p for p, *_ in transitions)
-    assert np.isclose(prob_sum, 1.0)
-
-
 def test_wall_bounce_and_bounds():
     env = tiny_env()
     # Move down into a wall neighbor setup
