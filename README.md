@@ -19,37 +19,27 @@ It includes:
 ---
 
 ## Project Structure
-```text
 RL_FinalProject_40413824/
+
 ├── agents/
+
 ├── environments/
+
 ├── experiments/
+
 ├── gui/
+
 ├── transfer/
+
 ├── tests/
+
 ├── main.py
+
 ├── README.md
+
 ├── requirements.txt
+
 └── report.pdf
-
----
-
-## Student-ID Rule
-
-According to the project document, the maze settings are derived from the student ID.
-
-For student ID:
-
-text
-40413824
-
-- `base_seed = int(student_id[-2]) = 2`
-- `maze_size = 15 + (base_seed % 4) = 17`
-
-So the default experiment setup is based on:
-
-- **seed = 2**
-- **maze size = 17**
 
 ---
 
@@ -93,8 +83,6 @@ So the default experiment setup is based on:
 ## Installation
 
 Install dependencies:
-
-bash
 pip install -r requirements.txt
 
 ---
@@ -102,8 +90,6 @@ pip install -r requirements.txt
 ## How to Run
 
 ### 1) Run the GUI
-
-bash
 python -m gui.app
 
 #### GUI Controls
@@ -205,21 +191,3 @@ Run tests:
 
 bash
 pytest -q
-
----
-
-## Author
-
-Student ID:
-
-text
-40413824
-
-Derived setup:
-
-text
-seed = 2
-maze_size = 17
-
-
-If you want, I can also make it **shorter and more polished**, like a real GitHub README.
