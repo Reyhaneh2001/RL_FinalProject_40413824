@@ -1,0 +1,11 @@
+{
+  "student_id": "40413824",
+  "seed": 2,
+  "change_ratio": 0.2,
+  "move_key": true,
+  "move_goal": true,
+  "betas": [0.25, 0.5, 0.75],
+  "episodes": 1500,
+  "max_steps": 500,
+  "success_prob": 0.8
+}
