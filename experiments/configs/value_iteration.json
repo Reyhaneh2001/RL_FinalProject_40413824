@@ -1,0 +1,6 @@
+{
+  "algo": "value_iteration",
+  "gamma": 0.99,
+  "theta": 1e-6,
+  "max_iterations": 1000
+}

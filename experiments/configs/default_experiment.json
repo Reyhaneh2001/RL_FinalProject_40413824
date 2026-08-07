@@ -1,0 +1,13 @@
+{
+  "student_id": "40413824",
+  "seed": 2,
+  "size": 17,
+  "reward_modes": ["shaped", "sparse"],
+  "algos": ["value_iteration", "q_learning", "sarsa_lambda"],
+  "episodes": 3000,
+  "max_steps": 500,
+  "do_transfer": true,
+  "wall_ratio": 0.18,
+  "num_penalties": 8,
+  "success_prob": 0.8
+}
